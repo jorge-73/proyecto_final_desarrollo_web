@@ -571,15 +571,16 @@ footer h2 {
   }
   /* FOOTER */
   footer h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .footer-info p,
   .footer-links p,
   .footer-social a {
-    font-size: 1.1rem;
+    font-size: .9rem;
+    font-weight: 700;
   }
   .footer-social h2 {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
   }
 }
