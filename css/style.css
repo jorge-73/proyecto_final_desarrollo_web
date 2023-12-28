@@ -1,16 +1,4 @@
 @media (max-width: 1200px) {
-  /* ABOUT */
-  .about1 {
-    align-items: flex-start;
-    margin-top: 7rem;
-    padding: 0 0.5rem;
-  }
-  .img-about {
-    width: 30rem;
-  }
-  .cut {
-    display: none;
-  }
   /* PRODUCTS */
   .products-title {
     padding: 1.5rem 3rem;
@@ -81,25 +69,6 @@
   }
   .card {
     width: 40%;
-  }
-  /* ABOUT */
-  .main-about {
-    display: flex;
-    flex-direction: column;
-  }
-  .about1 {
-    margin: 2rem 0 1rem;
-  }
-  .img-about {
-    width: 90%;
-  }
-  .about2 {
-    background-color: var(--color4);
-    border-radius: 10%;
-    margin-bottom: 1rem;
-  }
-  .about-article a {
-    background-color: var(--color2);
   }
   /* CONTACT */
   .main-contact {
