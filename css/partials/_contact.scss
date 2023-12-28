@@ -1,0 +1,43 @@
+/* CONTACT */
+.main-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  .sectionContact {
+    grid-column: 1 / 2;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+
+    h3 {
+      padding: 2rem 0;
+    }
+
+    p {
+      padding: 0 3rem 1rem;
+    }
+  }
+
+  .sectionForm {
+    grid-column: 2 / 3;
+
+    .form-contact {
+      width: 60%;
+      margin: 0.5rem auto;
+      border: 1px solid $color1;
+      padding: 0.5rem;
+      border-radius: 10px;
+      background-color: $color3;
+      box-shadow: 4px 4px 8px 2px $gray;
+
+      .btnForm {
+        background-color: $color2;
+
+        &:hover {
+          background-color: $color1;
+        }
+      }
+    }
+  }
+}

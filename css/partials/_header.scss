@@ -1,0 +1,22 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* NAVBAR */
+  .navbar {
+    background-color: $color1 !important;
+    .active {
+      background-color: $color2 !important;
+    }
+    .btn-outline-warning:hover {
+      background-color: $color2;
+    }
+    .btn-outline-warning:active {
+      background-color: $color2 !important;
+    }
+    .logo {
+      width: 2.1rem;
+      border-radius: 50%;
+    }
+  }
+}
