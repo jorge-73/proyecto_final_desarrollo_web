@@ -9,6 +9,10 @@ img {
 body {
   min-height: 100vh;
   background-color: $color5;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 main {
   min-height: 90vh;

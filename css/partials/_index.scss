@@ -7,14 +7,34 @@
     grid-column: 1 / 5;
     grid-row: 1 / 2;
 
-    .carousel-item img {
-      height: 28rem;
-      object-fit: cover;
-      width: 100%;
+    .carousel-item {
+      img {
+        height: 28rem;
+        object-fit: cover;
+        width: 100%;
+
+        @media (max-width: 1200px) {
+          object-fit: contain;
+          background-color: $color5;
+        }
+
+        @media (max-width: 550px) {
+          max-height: 28rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      background-position: left;
+      grid-row: 1 / 3;
     }
   }
   .two {
     display: none;
+
+    @media (max-width: 550px) {
+      display: block;
+    }
   }
   .section-info {
     grid-column: 1 / 3;
@@ -27,11 +47,24 @@
       flex-direction: column;
       align-items: center;
       padding: 0 5rem;
+
+      @media (max-width: 1024px) {
+        padding: 0 2rem;
+      }
     }
 
     p {
       text-align: center;
       font-size: 1.2rem;
+
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 550px) {
+        font-size: 1.2rem;
+        padding-top: 0.8rem;
+      }
     }
     a {
       text-decoration: none;
@@ -43,6 +76,15 @@
       &:hover {
         background-color: $color1;
       }
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      grid-column: 1 / 5;
+      grid-row: 3 / 4;
     }
   }
   .section-images {
@@ -64,6 +106,48 @@
         transform: scale(1.1);
         box-shadow: 6px 6px 8px 4px $gray;
       }
+
+      @media (max-width: 1024px) {
+        width: 14rem;
+        max-height: none;
+      }
+
+      @media (max-width: 768px) {
+        width: 35%;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 550px) {
+        width: 75%;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      grid-column: 1 / 5;
+      grid-row: 4 / 6;
+    }
+
+    @media (max-width: 550px) {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+
+    .one {
+      display: none;
     }
   }
 }
