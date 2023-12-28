@@ -269,9 +269,32 @@ header .navbar .logo {
 .main-products .products-title h2 {
   margin-bottom: 1rem;
 }
+@media (max-width: 1024px) {
+  .main-products .products-title h2 {
+    margin-bottom: 0.5rem;
+  }
+}
 .main-products .products-title p {
   font-size: 1.15rem;
   line-height: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .main-products .products-title {
+    padding: 1.5rem 3rem;
+    text-align: justify;
+  }
+}
+@media (max-width: 768px) {
+  .main-products .products-title {
+    background-color: #f2eadc;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .main-products .products-title {
+    padding: 1.5rem 2rem;
+  }
 }
 .main-products .products-carts {
   grid-column: 1/7;
@@ -296,6 +319,23 @@ header .navbar .logo {
 .main-products .products-carts .card img {
   height: 12rem;
 }
+@media (max-width: 1024px) {
+  .main-products .products-carts .card {
+    width: 24%;
+    height: 22rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-products .products-carts .card {
+    width: 40%;
+  }
+}
+@media (max-width: 550px) {
+  .main-products .products-carts .card {
+    width: 75%;
+    height: auto;
+  }
+}
 .main-products .products-carts figcaption {
   padding: 1rem;
 }
@@ -311,6 +351,26 @@ header .navbar .logo {
 }
 .main-products .products-carts figcaption .btn:hover {
   background-color: #ccaa72;
+}
+@media (max-width: 1024px) {
+  .main-products .products-carts {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-products .products-carts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 550px) {
+  .main-products {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-products .cut {
+    display: none;
+  }
 }
 
 /* ABOUT */

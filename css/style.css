@@ -1,10 +1,3 @@
-@media (max-width: 1200px) {
-  /* PRODUCTS */
-  .products-title {
-    padding: 1.5rem 3rem;
-  }
-}
-
 @media (max-width: 1024px) {
   /* COURSES */
   .courses img {
@@ -17,20 +10,6 @@
   }
   .courses p {
     padding: 0 1.2rem;
-  }
-  /* PRODUCTS */
-  .products-carts {
-    gap: 0.5rem;
-  }
-  .products-title {
-    text-align: center;
-  }
-  .products-title h2 {
-    margin-bottom: 0.5rem;
-  }
-  .card {
-    width: 24%;
-    height: 22rem;
   }
   /* CONTACT */
   .form-contact {
@@ -54,22 +33,6 @@
     grid-row: 2 / 3;
     padding-bottom: 1rem;
   }
-  /* PRODUCTS */
-  .products-title {
-    background-color: var(--color4);
-    border-radius: 10%;
-    margin-bottom: 1rem;
-  }
-  .products-title p {
-    text-align: justify;
-  }
-  .products-carts {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 40%;
-  }
   /* CONTACT */
   .main-contact {
     grid-template-rows: repeat(3, 1fr);
@@ -92,18 +55,6 @@
 }
 
 @media (max-width: 550px) {
-  /* PRODUCTS */
-  .main-products {
-    display: flex;
-    flex-direction: column;
-  }
-  .products-title {
-    padding: 1.5rem 2rem;
-  }
-  .card {
-    width: 75%;
-    height: auto;
-  }
   /* CONTACT */
   .main-contact {
     grid-template-rows: repeat(2, 1fr);

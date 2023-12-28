@@ -17,11 +17,30 @@
 
     h2 {
       margin-bottom: 1rem;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 0.5rem;
+      }
     }
 
     p {
       font-size: 1.15rem;
       line-height: 1.5rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 1.5rem 3rem;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      background-color: $color4;
+      border-radius: 10%;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 550px) {
+      padding: 1.5rem 2rem;
     }
   }
 
@@ -49,6 +68,20 @@
       img {
         height: 12rem;
       }
+
+      @media (max-width: 1024px) {
+        width: 24%;
+        height: 22rem;
+      }
+
+      @media (max-width: 768px) {
+        width: 40%;
+      }
+
+      @media (max-width: 550px) {
+        width: 75%;
+        height: auto;
+      }
     }
 
     figcaption {
@@ -69,6 +102,24 @@
           background-color: $color1;
         }
       }
+    }
+
+    @media (max-width: 1024px) {
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+
+    .cut{
+      display: none;
     }
   }
 }
