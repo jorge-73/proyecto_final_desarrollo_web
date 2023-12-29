@@ -6,6 +6,11 @@ footer {
 
   h2 {
     padding-bottom: 0.6rem;
+
+    @media (max-width: 550px) {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
   }
 
   .container-footer {
@@ -23,6 +28,11 @@ footer {
       p {
         font-size: 1.2rem;
         padding: 0.4rem;
+
+        @media (max-width: 550px) {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
       }
     }
 
@@ -40,6 +50,11 @@ footer {
       a {
         text-decoration: none;
         color: #000;
+
+        @media (max-width: 550px) {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
       }
     }
 
@@ -47,6 +62,12 @@ footer {
       flex: 1;
       line-height: 1.5rem;
       text-align: center;
+
+      h2 {
+        @media (max-width: 550px) {
+          padding: .5rem 0 1.8rem;
+        }
+      }
 
       ul {
         font-size: 1.2rem;
@@ -57,6 +78,11 @@ footer {
       a {
         text-decoration: none;
         color: #000;
+
+        @media (max-width: 550px) {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
       }
 
       .bi-facebook,
