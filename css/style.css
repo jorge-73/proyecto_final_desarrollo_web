@@ -1,46 +1,4 @@
-@media (max-width: 1024px) {
-  /* CONTACT */
-  .form-contact {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  /* COURSES */
-  .courses2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding-bottom: 1rem;
-  }
-  /* CONTACT */
-  .main-contact {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-  }
-  .sectionContact {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    background-color: var(--color4);
-    border-radius: 10%;
-    padding-bottom: 1rem;
-  }
-  .sectionForm {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-  }
-  .form-contact {
-    width: 90%;
-  }
-}
-
 @media (max-width: 550px) {
-  /* CONTACT */
-  .main-contact {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .sectionForm {
-    grid-row: 2 / 3;
-  }
   /* FOOTER */
   footer h2 {
     font-size: 1.2rem;

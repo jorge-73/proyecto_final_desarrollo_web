@@ -550,6 +550,23 @@ header .navbar .logo {
 .main-contact .sectionContact p {
   padding: 0 3rem 1rem;
 }
+@media (max-width: 1024px) {
+  .main-contact .sectionContact p {
+    text-align: justify;
+  }
+}
+@media (max-width: 768px) {
+  .main-contact .sectionContact {
+    background-color: #f2eadc;
+    border-radius: 10%;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .main-contact .sectionContact {
+    font-size: 1rem;
+  }
+}
 .main-contact .sectionForm {
   grid-column: 2/3;
 }
@@ -567,6 +584,27 @@ header .navbar .logo {
 }
 .main-contact .sectionForm .form-contact .btnForm:hover {
   background-color: #ccaa72;
+}
+@media (max-width: 1024px) {
+  .main-contact .sectionForm .form-contact {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .main-contact .sectionForm .form-contact .form-label {
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .main-contact .sectionForm {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* FOOTER */
