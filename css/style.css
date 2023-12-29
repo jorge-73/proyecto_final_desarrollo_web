@@ -1,16 +1,4 @@
 @media (max-width: 1024px) {
-  /* COURSES */
-  .courses img {
-    width: 24rem;
-    margin: 0.2rem 0;
-    border-radius: 8px;
-  }
-  .courses h2 {
-    padding: 0.6rem 1rem;
-  }
-  .courses p {
-    padding: 0 1.2rem;
-  }
   /* CONTACT */
   .form-contact {
     width: 90%;
@@ -19,15 +7,6 @@
 
 @media (max-width: 768px) {
   /* COURSES */
-  .main-courses {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .courses1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding-bottom: 1rem;
-  }
   .courses2 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
