@@ -18,5 +18,11 @@ header {
       width: 2.1rem;
       border-radius: 50%;
     }
+
+    @media (max-width: 990px) {
+      .linea {
+        display: none;
+      }
+    }
   }
 }

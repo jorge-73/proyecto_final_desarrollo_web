@@ -46,6 +46,11 @@ header .navbar .logo {
   width: 2.1rem;
   border-radius: 50%;
 }
+@media (max-width: 990px) {
+  header .navbar .linea {
+    display: none;
+  }
+}
 
 /* INDEX */
 .index-main {
@@ -306,6 +311,7 @@ header .navbar .logo {
   .main-courses {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
   }
 }
 
@@ -427,6 +433,7 @@ header .navbar .logo {
   .main-products {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
   }
   .main-products .cut {
     display: none;
@@ -602,6 +609,11 @@ header .navbar .logo {
   .main-contact {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .main-contact {
+    padding: 1rem 0;
   }
 }
 
