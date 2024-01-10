@@ -52,7 +52,7 @@
       }
 
       @media (max-width: 550px) {
-        padding: 0 .1rem;
+        padding: 0 0.1rem;
       }
     }
 
@@ -71,9 +71,39 @@
 
       @media (max-width: 550px) {
         font-size: 1.2rem;
-        padding: 0.8rem .5rem 0;
+        padding: 0.8rem 0.5rem 0;
       }
     }
+    .text-focus-in {
+      -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+        both;
+      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    }
+    @-webkit-keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+
     a {
       text-decoration: none;
       color: #000;
