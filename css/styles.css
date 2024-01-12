@@ -158,6 +158,104 @@ header .navbar .logo {
 .index-main .section-info a:hover {
   background-color: #ccaa72;
 }
+.index-main .section-info .flicker-in-1 {
+  animation: flicker-in-1 2s linear both;
+}
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 1024px) {
   .index-main .section-info {
     padding: 0 1rem;
@@ -171,6 +269,25 @@ header .navbar .logo {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+.index-main .section-images .slide-in-bottom {
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.index-main .section-images .slide-in-bottom2 {
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+.index-main .section-images .slide-in-bottom3 {
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .index-main .section-images .cartImg {
   width: 18rem;
@@ -198,6 +315,9 @@ header .navbar .logo {
   .index-main .section-images .cartImg {
     width: 75%;
   }
+}
+.index-main .section-images .cartImg.animation-done {
+  animation: none !important;
 }
 @media (max-width: 1024px) {
   .index-main .section-images {
