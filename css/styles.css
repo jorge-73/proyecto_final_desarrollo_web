@@ -42,6 +42,13 @@ header .navbar .btn-outline-warning:hover {
 header .navbar .btn-outline-warning:active {
   background-color: #d9bf95 !important;
 }
+header .navbar .navbar-brand {
+  transition: all 1s;
+}
+header .navbar .navbar-brand:hover {
+  transform: scale(1.1);
+  text-shadow: 4px 4px 2px rgba(80, 79, 79, 0.6);
+}
 header .navbar .logo {
   width: 2.1rem;
   border-radius: 50%;

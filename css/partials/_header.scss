@@ -14,6 +14,13 @@ header {
     .btn-outline-warning:active {
       background-color: $color2 !important;
     }
+    .navbar-brand {
+      transition: all 1s;
+    }
+    .navbar-brand:hover {
+      transform: scale(1.1);
+      text-shadow: 4px 4px 2px rgba(80,79,79,0.6);
+    }
     .logo {
       width: 2.1rem;
       border-radius: 50%;
