@@ -27,7 +27,7 @@ footer {
 
       p {
         font-size: 1.2rem;
-        padding: 0.4rem;
+        padding: 0.4rem 2rem;
 
         @media (max-width: 550px) {
           font-size: 0.9rem;
@@ -38,7 +38,6 @@ footer {
 
     .footer-links {
       flex: 1;
-      line-height: 1.5rem;
       text-align: center;
 
       ul {
@@ -50,6 +49,13 @@ footer {
       a {
         text-decoration: none;
         color: #000;
+        transition: .8s;
+        line-height: .5;
+        text-transform: uppercase;
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         @media (max-width: 550px) {
           font-size: 0.9rem;
@@ -60,7 +66,6 @@ footer {
 
     .footer-social {
       flex: 1;
-      line-height: 1.5rem;
       text-align: center;
 
       h2 {
@@ -78,10 +83,12 @@ footer {
       a {
         text-decoration: none;
         color: #000;
+        line-height: 1.5rem;
+        font-weight: 700;
 
         @media (max-width: 550px) {
           font-size: 0.9rem;
-          font-weight: 700;
+          font-weight: bold;
           line-height: 2rem;
         }
       }
