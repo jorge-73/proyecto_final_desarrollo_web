@@ -622,11 +622,11 @@ header .navbar .logo {
   text-align: center;
   padding: 1.5rem 15rem;
 }
-.main-products .products-title h2 {
+.main-products .products-title h1 {
   margin-bottom: 1rem;
 }
 @media (max-width: 1024px) {
-  .main-products .products-title h2 {
+  .main-products .products-title h1 {
     margin-bottom: 0.5rem;
   }
 }
@@ -808,7 +808,7 @@ header .navbar .logo {
 .main-products .products-carts figcaption {
   padding: 1rem;
 }
-.main-products .products-carts figcaption h4 {
+.main-products .products-carts figcaption .h4 {
   padding-bottom: 1rem;
 }
 .main-products .products-carts figcaption .tracking-in-expand {
@@ -1093,7 +1093,7 @@ header .navbar .logo {
   text-align: center;
   font-size: 1.4rem;
 }
-.main-contact .sectionContact h3 {
+.main-contact .sectionContact h1 {
   padding: 2rem 0;
 }
 .main-contact .sectionContact .flicker-in-1 {
@@ -1310,11 +1310,11 @@ footer {
   padding: 20px 0;
   font-weight: 500;
 }
-footer h2 {
+footer h3 {
   padding-bottom: 0.6rem;
 }
 @media (max-width: 550px) {
-  footer h2 {
+  footer h3 {
     font-size: 1.2rem;
     font-weight: bold;
   }
