@@ -49,9 +49,8 @@ footer {
       a {
         text-decoration: none;
         color: #000;
-        transition: .8s;
-        line-height: .5;
-        text-transform: uppercase;
+        transition: 0.8s;
+        line-height: .5px;
 
         &:hover {
           transform: scale(1.1);
@@ -59,6 +58,7 @@ footer {
 
         @media (max-width: 550px) {
           font-size: 0.9rem;
+          line-height: 1rem;
           font-weight: 700;
         }
       }
@@ -70,7 +70,7 @@ footer {
 
       h2 {
         @media (max-width: 550px) {
-          padding: .5rem 0 1.5rem;
+          padding: 0.5rem 0 1.5rem;
         }
       }
 
@@ -83,8 +83,7 @@ footer {
       a {
         text-decoration: none;
         color: #000;
-        line-height: 1.5rem;
-        font-weight: 700;
+        line-height: .5px;
 
         @media (max-width: 550px) {
           font-size: 0.9rem;
@@ -125,5 +124,35 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     font-size: 1.2rem;
+
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-footer {
+    flex-direction: column;
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-links a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer-social ul {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 1rem;
   }
 }

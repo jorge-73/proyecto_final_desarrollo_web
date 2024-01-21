@@ -1354,8 +1354,7 @@ footer .container-footer .footer-links a {
   text-decoration: none;
   color: #000;
   transition: 0.8s;
-  line-height: 0.5;
-  text-transform: uppercase;
+  line-height: 0.5px;
 }
 footer .container-footer .footer-links a:hover {
   transform: scale(1.1);
@@ -1363,6 +1362,7 @@ footer .container-footer .footer-links a:hover {
 @media (max-width: 550px) {
   footer .container-footer .footer-links a {
     font-size: 0.9rem;
+    line-height: 1rem;
     font-weight: 700;
   }
 }
@@ -1383,8 +1383,7 @@ footer .container-footer .footer-social ul {
 footer .container-footer .footer-social a {
   text-decoration: none;
   color: #000;
-  line-height: 1.5rem;
-  font-weight: 700;
+  line-height: 0.5px;
 }
 @media (max-width: 550px) {
   footer .container-footer .footer-social a {
@@ -1408,4 +1407,31 @@ footer .footer-bottom {
   text-align: center;
   padding: 1.5rem 0;
   font-size: 1.2rem;
+}
+@media (max-width: 550px) {
+  footer .footer-bottom {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-footer {
+    flex-direction: column;
+  }
+  .container-footer .footer-info,
+  .container-footer .footer-links,
+  .container-footer .footer-social {
+    width: 100%;
+    text-align: center;
+  }
+  .container-footer .footer-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-social ul {
+    justify-content: center;
+  }
+  .footer-bottom {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
