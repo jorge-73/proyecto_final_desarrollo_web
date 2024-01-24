@@ -33,12 +33,14 @@ footer {
   .footer-links {
     ul {
       font-size: 1.1rem;
-      list-style: none;
+      list-style-image: url("../img/coin-bitcoin.svg");
       padding: 0;
 
       @media (max-width: 550px) {
         display: flex;
         gap: 1rem;
+        list-style: none;
+
       }
 
       a {

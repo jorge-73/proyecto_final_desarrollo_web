@@ -12,6 +12,7 @@ img {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: #ffffff;
 }
 @media (max-width: 1024px) {
@@ -79,11 +80,6 @@ header .navbar .logo {
   .index-main .hero-img .carousel-item img {
     background-color: #ffffff;
     height: auto;
-  }
-}
-@media (max-width: 550px) {
-  .index-main .hero-img .carousel-item img {
-    max-height: 28rem;
   }
 }
 @media (max-width: 768px) {
@@ -288,11 +284,11 @@ header .navbar .logo {
 }
 @keyframes slide-in-bottom {
   0% {
-    transform: translateY(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -371,6 +367,7 @@ header .navbar .logo {
     width: 24rem;
     margin: 0.2rem 0;
     border-radius: 8px;
+    max-width: 100%;
   }
 }
 .main-courses .courses .fade-in-top {
@@ -787,6 +784,8 @@ header .navbar .logo {
 }
 .main-products .products-carts .card img {
   height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1024px) {
   .main-products .products-carts .card {
@@ -1338,13 +1337,14 @@ footer .footer-info p {
 }
 footer .footer-links ul {
   font-size: 1.1rem;
-  list-style: none;
+  list-style-image: url("../img/coin-bitcoin.svg");
   padding: 0;
 }
 @media (max-width: 550px) {
   footer .footer-links ul {
     display: flex;
     gap: 1rem;
+    list-style: none;
   }
 }
 footer .footer-links ul a {
